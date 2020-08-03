@@ -6,7 +6,7 @@ body{
   background-color: #ff4c68;
 }
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 6%;
 }
 h1{
   line-height: 1.5;
@@ -36,14 +36,18 @@ h1{
 }
 /* Tittle Image */
 .title-img{
+  right: 30%;
   width: 60%;
+  position: absolute;
   transform: rotate(25deg);
 }
 
 
 /* Features icons */
 #features{
+  position: relative;
   text-align: center;
+  background-color: white;
 }
 .features{
   width: 100%;
@@ -110,4 +114,26 @@ h2{
 .pricing-col{
   padding: 3% 2%;
   text-align: center;
+}
+/* Call to Action */
+#cta{
+  color: #fff;
+  padding: 10%;
+  text-align: center;
+  background-color: #ff4c68;
+}
+.second-download{
+  margin: 5% 1.5% 1%;
+}
+.cta-h3{
+  font-size: 3rem;
+}
+/* Footer */
+#footer{
+  padding: 6%;
+  text-align: center;
+  background-color: #fff;
+}
+.social{
+  padding: 2% 1% ;
 }
