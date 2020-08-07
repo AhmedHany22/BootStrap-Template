@@ -1,139 +1,220 @@
-body{
+/* Common Features */
+body {
+  text-align: center;
   font-family: "Montserrat";
 }
-#title{
-  color: #fff;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  font-family: "Montserrat-bold";
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.colored-section {
   background-color: #ff4c68;
+  color: #fff;
 }
-.container-fluid{
-  padding: 3% 15% 6%;
+
+.white-section {
+  background-color: #fff;
 }
-h1{
-  line-height: 1.5;
-  font-size: 2.9rem;
-  font-weight: bold;
-  font-family: "Montserrat-black";
-}
-/* Navigation Bar */
-.navbar{
+
+/* Navbar Section */
+.navbar {
   padding: 0 0 4.5rem;
 }
+
+.nav-item {
+  padding: 0 18px;
+}
+
 .navbar-brand {
   font-size: 2.5rem;
   font-family: 'Ubuntu Condensed', sans-serif;
 }
-.nav-item{
-  padding: 0 18px;
-}
-.nav-link{
+
+.nav-link {
   font-size: 1.2rem;
   font-weight: lighter;
   font-family: "Montserrat-lighter";
 }
-/* Download Button */
-.download{
+
+/* Title section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+.big-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Montserrat-black";
+}
+
+.download {
   margin: 5% 3% 5% 0;
 }
-/* Tittle Image */
-.title-img{
+
+.title-img {
   right: 30%;
   width: 60%;
   position: absolute;
   transform: rotate(25deg);
 }
 
-
-/* Features icons */
-#features{
+/* Features Section */
+#features {
   position: relative;
-  text-align: center;
-  background-color: white;
 }
-.features{
+
+.features {
   width: 100%;
   padding: 8rem 6rem;
 }
-.item{
+
+.item {
   padding: 0 2rem;
 }
-.fas{
+
+.fas {
   color: #ef8172;
   font-size: 3rem;
   padding-bottom: 0.9rem;
 }
-.fas:hover{
+
+.fas:hover {
   color: #ff4c68;
 }
-h3{
-  font-size: 1.25rem;
-  font-weight: 800;
-  font-family: "Montserrat-bold";
-}
-p{
-  color: #8f8f8f;
-  font-size: 0.9rem;
+
+.feature-title {
+  font-size: 1.5rem;
 }
 
-/* Testimonials */
-#testimonials{
+/* Testimonials Section */
+#testimonials .colored-section {
+  background-color: #ef8172;
   color: #fff;
-  text-align: center;
-  background-color: #ef8172 ;
 }
-h2{
-  line-height: 1.5;
-  font-weight: bold;
-  font-family: 'Montserrat';
-}
-.carousel-inner{
-  padding: 7% 15%;
-}
-.testimonial-img{
-  width: 10%;
-  margin: 20px;
-  border-radius: 100%;
-}
+
 .carousel-indicators li {
   width: 10px;
   height: 10px;
   border-radius: 100%;
 }
-#press{
-  padding-bottom: 3%;
-  text-align: center;
-  background-color: #ef8172;
+
+.testimonials-heading {
+  font-size: 2rem;
+  line-height: 1.5;
 }
-.press-logo{
+
+.testimonial-img {
+  width: 10%;
+  margin: 20px;
+  border-radius: 100%;
+}
+
+/* Press Section */
+#press {
+  padding-bottom: 3%;
+}
+
+#press .colored-section {
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.press-logo {
   width: 15%;
   margin: 20px 20px 50px;
 }
-/* pricing */
-#pricing{
-  padding: 7%;
+
+/* Pricing Section */
+#pricing {
+  padding: 4% 7%;
 }
-.pricing-col{
+
+.pricing-heading {
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+.pricing-col {
   padding: 3% 2%;
-  text-align: center;
 }
-/* Call to Action */
-#cta{
+
+.space {
+  margin-bottom: 3.3rem;
+}
+
+p {
+  color: #8f8f8f;
+  font-size: 0.9rem;
+}
+
+/* Call to Action Section */
+#cta {
   color: #fff;
-  padding: 10%;
-  text-align: center;
+  padding: 7% 15%;
+  line-height: 1.5;
   background-color: #ff4c68;
 }
-.second-download{
-  margin: 5% 1.5% 1%;
-}
-.cta-h3{
+
+#cta h3 {
   font-size: 3rem;
 }
-/* Footer */
-#footer{
-  padding: 6%;
-  text-align: center;
+
+/* Footer Section */
+#footer {
+  padding: 7% 15%;
   background-color: #fff;
 }
-.social{
-  padding: 2% 1% ;
+
+.social {
+  padding: 20px 10px;
+}
+
+.right {
+  padding-top: 1rem;
+}
+
+/* media quary */
+@media (max-width: 1028px) {
+  .navbar-nav{
+    margin-top: 5%;
+  }
+
+  .nav-link{
+    font-size: 1.5rem;
+  }
+
+  .big-heading {
+    text-align: center;
+  }
+
+  #title .container-fluid {
+    text-align: center;
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
+
+  .social {
+    font-size: 2rem;
+  }
+
+  .right {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+  }
 }
